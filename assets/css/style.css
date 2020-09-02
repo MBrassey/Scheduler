@@ -9,7 +9,7 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border-left: 2px solid #d3d3d3;
   padding: 10px;
 }
 
@@ -36,9 +36,9 @@ textarea {
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  border-left: 1px solid black;
+  border-top: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+  border-left: 2px solid #d3d3d3;
   height: 100;
 }
 
@@ -58,7 +58,7 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 2px solid #d3d3d3;
   background-color: #06AED5;
   color: white;
   font-size: 28px;
