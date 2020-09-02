@@ -19,9 +19,9 @@ var loadTasks = function () {
         } else {
             hour = hour + "AM";
         }
-        var task = "";
+        var task = localStorage.getItem(i) ?? "";
         var html = `<div class="row mt-1">
-        <div class="col-1 time-block hour">
+        <div class="col-1 col-lg-1 time-block hour">
             ${hour}
         </div>
         <div class="col-10 col-lg-10" id="s${i}">
@@ -32,13 +32,64 @@ var loadTasks = function () {
       </div>`;
         container.insertAdjacentHTML("beforeend", html);
     }
+    updateTime();
 
     $("[id^=saveBtn]").on("click", function () {
+        var id = this.id,
+            time = id.replace(/\D/g, "");
+        var description = $("#day" + time).html();
+        saveTask(time, description);
     });
 };
 
+function saveTask(time, description) {
+    localStorage.setItem(time, description);
+}
+
+$("div").on("click", "p", function () {
+    var text = $(this).text();
+    var textInput = $("<textarea>");
+    $(this).replaceWith(textInput);
+    textInput.trigger("focus").attr("id", this.id).addClass("form-control description").val(text).text().trim();
+});
+
+$("div").on("blur", "textarea", function () {
+    var text = $(this).val().trim();
+    var taskP = $("<p>").attr("id", this.id).addClass("description").text(text);
+    $(this).replaceWith(taskP);
+});
+
+function updateTime() {
+    var currentHour = moment().hour();
+    $(".mt-1").each(function () {
+        var timeBlock = $(this).children(".time-block").text();
+        var matches = timeBlock.match(/\d+/g);
+        var hourNum = parseInt(matches);
+        if (hourNum < 7) {
+            var twentyFour = hourNum + 12;
+        } else {
+            var twentyFour = hourNum;
+        }
+        if (currentHour < twentyFour) {
+            $(this).addClass("future");
+            $(this).removeClass("present");
+            $(this).removeClass("past");
+        } else if (currentHour === twentyFour) {
+            $(this).addClass("present");
+            $(this).removeClass("past");
+            $(this).removeClass("future");
+        } else if (currentHour > twentyFour) {
+            $(this).addClass("past");
+            $(this).removeClass("present");
+            $(this).removeClass("future");
+        }
+    });
+}
+
 loadTasks();
 
+// Iterate Every Minute
 setInterval(function () {
     setDate();
-}, 1000 * 60 * 0.1);
+    updateTime();
+}, 1000 * 60 * 1); // 60 Seconds
