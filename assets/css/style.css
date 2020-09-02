@@ -18,7 +18,7 @@ textarea {
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 8px solid black;
 }
 
 .description {
@@ -30,7 +30,7 @@ textarea {
 
 .time-block {
   text-align: center;
-  padding-top: .8rem;
+  padding-top: .9rem;
 }
 
 .hour {
@@ -38,6 +38,7 @@ textarea {
   color: #000000;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
+  border-left: 1px solid black;
   height: 100;
 }
 

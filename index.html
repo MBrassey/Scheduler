@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/style.css" />
         <title>Work Day Scheduler</title>
     </head>
@@ -17,12 +18,16 @@
             <h1 class="display-3 text-center">Work Day Scheduler</h1>
             <p class="lead text-center">A simple calendar app for scheduling your work day</p>
             <p id="today" class="lead"></p>
+            <p>
+            <input id="toggle-duration" type="checkbox" checked data-toggle="toggle" data-on="12 Hours" data-off="8 Hours" data-onstyle="success" data-offstyle="primary">
+            </p>
         </header>
         <div id="schedule" class="container"></div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
         <script src="./assets/js/script.js"></script>
  <!--   <script src="./assets/js/script2.js"></script> -->
     </body>
