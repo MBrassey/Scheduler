@@ -8,9 +8,11 @@ var setWorkDuration = function () {
     if (toggle) {
         workStart = 6;
         workEnd = 18;  
+        $('#toggleButton').addClass('twelve').removeClass('eight');
     } else {
     workStart = 9;
     workEnd = 18;
+    $('#toggleButton').addClass('eight').removeClass('twelve');
     }
 };
 
@@ -19,11 +21,11 @@ var setWorkDuration = function () {
 $("#toggle").click(function(){
     if (toggle) {
         toggle = false;
-        console.log(toggle);
+        console.log("12 Hours:" + toggle);
         loadTasks();
     } else {
         toggle = true;
-        console.log(toggle);
+        console.log("12 Hours:" + toggle);
         loadTasks();
     }
   });

@@ -1,24 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+    --Azure: #2994cb;
+    --Absinthe: #a3de9e;
+    --Sky: #394b59;
+    --Anthracite: #2a2a2a;
+    --Jet: #141414;
+    --Night: #181818;
+    --Stone: #6c757d;
+    --Zinc: #cfd2d0;
+    --Absinthe-alpha: rgba(163, 222, 158, 0.8);
+    --Shadow-Alpha: rgba(0, 0, 0, 0.5);
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: var(--Sky);
 }
 
 textarea {
-  background: transparent;
+  background-color: transparent;
   border: none;
   resize: none;
-  color: #000000;
-  border-left: 2px solid #d3d3d3;
+  color: var(--Anthracite);
+  border-left: 2px solid var(--Zinc);
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: var(--Azure);
   border-radius: 0;
-  border-bottom: 8px solid black;
+  border-bottom: 8px solid var(--Night);
 }
 
 .description {
@@ -34,44 +52,65 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 2px solid #d3d3d3;
-  border-bottom: 2px solid #d3d3d3;
-  border-left: 2px solid #d3d3d3;
+  background-color: var(--Zinc);
+  color: var(--Night);
+  font-weight: bold;
+  border-top: 2px solid var(--Zinc);
+  border-bottom: 2px solid var(--Zinc);
+  border-left: 2px solid var(--Zinc);
   height: 100;
 }
 
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background-color: var(--Stone);
+  color: var(--Absinthe);
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: var(--Absinthe);
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: var(--Absinthe);
 }
 
 .saveBtn {
-  border-left: 2px solid #d3d3d3;
-  background-color: #06AED5;
-  color: white;
+  border-left: 2px solid var(--Zinc);
+  background-color: var(--Azure);
+  color: var(--Absinthe);
   font-size: 28px;
   text-align: center;
   outline: none;
 }
 
 .saveBtn:hover {
-  color: black;
+  color: var(--Night);
   font-size: 30px;
   transition: all 0.3s ease-in-out;
 }
 
 .saveBtn:focus {
   outline: none;
+}
+
+.primary {
+  background-color: var(--Sky);
+}
+
+.success {
+  background-color: var(--Azure);
+}
+
+.sub {
+  color: var(--Zinc);
+}
+
+.date {
+  color: var(--Absinthe);
+}
+
+@media screen and (max-width: 980px) {
+  
 }
