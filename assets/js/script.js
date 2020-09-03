@@ -7,11 +7,11 @@ var setDate = function () {
 var setWorkDuration = function () {
     if (toggle) {
         workStart = 6;
-        workEnd = 18;  
+        workEnd = 18;  // 6PM
         $('#toggleButton').addClass('twelve').removeClass('eight');
     } else {
     workStart = 9;
-    workEnd = 17;
+    workEnd = 17; // 5PM
     $('#toggleButton').addClass('eight').removeClass('twelve');
     }
 };
