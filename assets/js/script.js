@@ -1,16 +1,39 @@
+var toggle = false; // 12 / 8 Hour Modes
+
 var setDate = function () {
     $("#today").text(moment().format("dddd, MMMM Do"));
 };
 
 var setWorkDuration = function () {
-    workStart = 6;
+    if (toggle) {
+        workStart = 6;
+        workEnd = 18;  
+    } else {
+    workStart = 9;
+    workEnd = 18;
+    }
 };
+
+// Listen For Toggle Button Clicked
+
+$("#toggle").click(function(){
+    if (toggle) {
+        toggle = false;
+        console.log(toggle);
+        loadTasks();
+    } else {
+        toggle = true;
+        console.log(toggle);
+        loadTasks();
+    }
+  });
 
 var loadTasks = function () {
     setDate();
     setWorkDuration();
+    $('#schedule').empty();
     var container = document.getElementById("schedule");
-    for (i = workStart; i < 19; i++) {
+    for (i = workStart; i < workEnd; i++) {
         var hour = i;
         if (i > 12) {
             hour = hour - 12 + "PM";
@@ -65,7 +88,7 @@ function updateTime() {
         var timeBlock = $(this).children(".time-block").text();
         var matches = timeBlock.match(/\d+/g);
         var hourNum = parseInt(matches);
-        if (hourNum < 7) {
+        if (hourNum < workStart) {
             var twentyFour = hourNum + 12;
         } else {
             var twentyFour = hourNum;
