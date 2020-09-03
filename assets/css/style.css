@@ -5,6 +5,7 @@
 :root {
     --Azure: #2994cb;
     --Absinthe: #a3de9e;
+    --Sakura: #de9ea1;
     --Sky: #394b59;
     --Anthracite: #2a2a2a;
     --Jet: #141414;
@@ -67,13 +68,13 @@ textarea {
 }
 
 .present {
-  background-color: #ff6961;
-  color: var(--Absinthe);
+  background-color: var(--Sakura);
+  color: var(--Anthracite);
 }
 
 .future {
-  background-color: #77dd77;
-  color: var(--Absinthe);
+  background-color: var(--Absinthe);
+  color: var(--Anthracite);
 }
 
 .saveBtn {
