@@ -11,7 +11,7 @@ var setWorkDuration = function () {
         $('#toggleButton').addClass('twelve').removeClass('eight');
     } else {
     workStart = 9;
-    workEnd = 18;
+    workEnd = 17;
     $('#toggleButton').addClass('eight').removeClass('twelve');
     }
 };

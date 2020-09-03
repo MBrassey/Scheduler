@@ -1,5 +1,5 @@
 # Scheduler
-Workday Scheduler Concept
+Day Scheduler Concept
 
 - [x] [Initital App](https://github.com/luc1dLife/Scheduler/issues/1)
 - [x] [Functionality](https://github.com/luc1dLife/Scheduler/issues/2)
