@@ -1,9 +1,5 @@
 # Scheduler
 Workday Scheduler Concept
-- 8 & 12 hour workday options
-- Entries can be saved to localstorage
-- Color indicates past, present & future
-- App updates every minute
 
 - [x] [Initital App](https://github.com/luc1dLife/Scheduler/issues/1)
 - [x] [Functionality](https://github.com/luc1dLife/Scheduler/issues/2)
