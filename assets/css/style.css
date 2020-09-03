@@ -3,17 +3,17 @@
 }
 
 :root {
-    --Azure: #2994cb;
-    --Absinthe: #a3de9e;
-    --Sakura: #de9ea1;
-    --Sky: #394b59;
-    --Anthracite: #2a2a2a;
-    --Jet: #141414;
-    --Night: #181818;
-    --Stone: #6c757d;
-    --Zinc: #cfd2d0;
-    --Absinthe-alpha: rgba(163, 222, 158, 0.8);
-    --Shadow-Alpha: rgba(0, 0, 0, 0.5);
+  --Azure: #2994cb;
+  --Absinthe: #a3de9e;
+  --Sakura: #de9ea1;
+  --Sky: #394b59;
+  --Anthracite: #2a2a2a;
+  --Jet: #141414;
+  --Night: #181818;
+  --Stone: #6c757d;
+  --Zinc: #cfd2d0;
+  --Absinthe-alpha: rgba(163, 222, 158, 0.8);
+  --Shadow-Alpha: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -51,7 +51,7 @@ textarea {
 
 .time-block {
   text-align: center;
-  padding-top: .9rem;
+  padding-top: 0.9rem;
 }
 
 .hour {
@@ -124,29 +124,29 @@ textarea {
 
 #toggle {
   margin: 0 auto;
-  max-width: 100px; 
+  max-width: 100px;
 }
 
 @media screen and (max-width: 980px) {
   .hour {
-    padding-left: 1%;
+      padding-left: 1%;
   }
 }
 
 @media screen and (max-width: 767px) {
   .title {
-    font-size: 50px;
+      font-size: 50px;
   }
 
   .hour {
-    min-width: 15%;
+      min-width: 15%;
   }
 
   .saveBtn {
-    min-width: 15%;
+      min-width: 15%;
   }
 
   .description {
-    min-width: 50%;
+      min-width: 50%;
   }
 }

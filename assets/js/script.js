@@ -7,18 +7,18 @@ var setDate = function () {
 var setWorkDuration = function () {
     if (toggle) {
         workStart = 6;
-        workEnd = 18;  // 6PM
-        $('#toggleButton').addClass('twelve').removeClass('eight');
+        workEnd = 18; // 6PM
+        $("#toggleButton").addClass("twelve").removeClass("eight");
     } else {
-    workStart = 9;
-    workEnd = 17; // 5PM
-    $('#toggleButton').addClass('eight').removeClass('twelve');
+        workStart = 9;
+        workEnd = 17; // 5PM
+        $("#toggleButton").addClass("eight").removeClass("twelve");
     }
 };
 
 // Listen For Toggle Button Clicked
 
-$("#toggle").click(function(){
+$("#toggle").click(function () {
     if (toggle) {
         toggle = false;
         console.log("12 Hours:" + toggle);
@@ -28,12 +28,12 @@ $("#toggle").click(function(){
         console.log("12 Hours:" + toggle);
         loadTasks();
     }
-  });
+});
 
 var loadTasks = function () {
     setDate();
     setWorkDuration();
-    $('#schedule').empty();
+    $("#schedule").empty();
     var container = document.getElementById("schedule");
     for (i = workStart; i < workEnd; i++) {
         var hour = i;
