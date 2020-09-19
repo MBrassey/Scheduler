@@ -1,6 +1,6 @@
 # Scheduler
 
-> Day Scheduler Concept using jQuery/JS/HTML/CSS.  
+> Day Scheduler Concept using jQuery/JS/HTML/CSS.
 
 - [x] [Initital App](https://github.com/MBrassey/Scheduler/issues/1)
 - [x] [Functionality](https://github.com/MBrassey/Scheduler/issues/2)
