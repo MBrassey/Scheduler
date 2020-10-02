@@ -4,6 +4,7 @@ Day Scheduler Concept using jQuery/JS/HTML/CSS.
 
 ![licensebadge](https://img.shields.io/badge/license-CC0_1.0_Universal-blue)
 
+#### Issues
 - [x] [Initital App](https://github.com/MBrassey/Scheduler/issues/1)
 - [x] [Functionality](https://github.com/MBrassey/Scheduler/issues/2)
 - [x] [Style & Fonts](https://github.com/MBrassey/Scheduler/issues/3)
