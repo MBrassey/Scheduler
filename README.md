@@ -1,6 +1,6 @@
 ## Scheduler
 
-Day Scheduler Concept using jQuery/JS/HTML/CSS.
+Day Scheduler Concept using jQuery/JS/HTML/CSS. See [desktop app version](https://github.com/MBrassey/Scheduler-Electron) packaged for Windows, Mac & Linux.
 
 ![licensebadge](https://img.shields.io/badge/license-CC0_1.0_Universal-blue)
 
@@ -21,6 +21,6 @@ Contact me at [matt@brassey.io](mailto:matt@brassey.io) with any questions or co
 
 #### License
 
-`Scheduler` is published under the __CC0_1.0_Universal__ license.
+`Scheduler` is published under the **CC0_1.0_Universal** license.
 
 > The Creative Commons CC0 Public Domain Dedication waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach. As with the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense.
