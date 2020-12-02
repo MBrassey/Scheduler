@@ -11,7 +11,7 @@ Day Scheduler Concept using jQuery/JS/HTML/CSS. See [desktop app version](https:
 - [x] [Style & Fonts](https://github.com/MBrassey/Scheduler/issues/3)
 - [x] [Touch Ups](https://github.com/MBrassey/Scheduler/issues/4)
 
-<h6><p align="right">:cyclone: Click the image(s) below to view the live <a id="Screenshots" href="https://MBrassey.github.io/Scheduler/">webapplication</a></p></h6>
+<h6><p align="right">:cyclone: Click the image below to view the live <a id="Screenshots" href="https://MBrassey.github.io/Scheduler/">webapplication</a></p></h6>
 
 [<p align="center"><img src="assets/img/Preview.png">](https://MBrassey.github.io/Scheduler/)
 
