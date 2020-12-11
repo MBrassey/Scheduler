@@ -13,7 +13,7 @@ Day scheduler concept using jQuery/JS/HTML/CSS, packaged by @electron-forge for 
 
 #### Download
 
-[Releases](https://github.com/MBrassey/Scheduler-Electron/releases)
+[Releases](https://github.com/MBrassey/Scheduler/releases/tag/0.1.0)
 
 <h6><p align="right">:cyclone: Click the image below to view the live <a id="Screenshots" href="https://MBrassey.github.io/Scheduler/">webapplication</a></p></h6>
 
