@@ -17,7 +17,7 @@ Day scheduler concept using jQuery/JS/HTML/CSS. See [desktop app version](https:
 
 <h6><p align="right">:cyclone: Click the image below to view the live <a id="Screenshots" href="https://MBrassey.github.io/Scheduler/">webapplication</a></p></h6>
 
-[<p align="center"><img src="assets/img/Preview.png">](https://MBrassey.github.io/Scheduler/)
+[<p align="center"><img src="assets/img/Preview0.png">](https://MBrassey.github.io/Scheduler/)
 
 #### Questions
 
