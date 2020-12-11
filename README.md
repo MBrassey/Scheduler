@@ -1,6 +1,6 @@
 ## Scheduler
 
-Day scheduler concept using jQuery/JS/HTML/CSS. See [desktop app version](https://github.com/MBrassey/Scheduler-Electron) packaged for Windows, Mac & Linux.
+Day scheduler concept using jQuery/JS/HTML/CSS, packaged by @electron-forge for Windows, Mac & Linux.
 
 ![licensebadge](https://img.shields.io/badge/license-CC0_1.0_Universal-blue)
 
